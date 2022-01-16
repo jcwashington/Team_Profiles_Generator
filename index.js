@@ -39,7 +39,6 @@ function managerQuestions() {
             }
         ]).then(data => {
         const manager = new Manager(data.name, data.id, data.email, data.office);
-        console.log(manager);
         teamMembers.push(manager);
         addNewMember();
     })
@@ -88,7 +87,6 @@ function engineerQuestions () {
             }
         ]).then (member => {
         const engineer = new Engineer(member.name, member.id, member.email, member.github);
-        console.log(engineer);
         teamMembers.push(engineer);
         addNewMember();
     })
@@ -118,7 +116,6 @@ function internQuestions () {
             }
         ]).then (member => {
         const intern = new Intern(member.name, member.id, member.email, member.school);
-        console.log(intern);
         teamMembers.push(intern);
         addNewMember();
     })
@@ -132,6 +129,7 @@ function createHTML () {
         // In case of a error throw err.
         if (err) throw err;
     })
+    console.log('Check ./output for your HTML file');
 }
 
 start();

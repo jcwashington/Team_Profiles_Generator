@@ -6,6 +6,8 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 const generateHTML = require("./lib/generateHTML");
+const { template } = require("lodash");
+const { placeholder } = require("@babel/types");
 
 const teamMembers = [];
 
@@ -49,7 +51,7 @@ function addNewMember() {
                 type: "list",
                 name: "role",
                 message: "Do you want to add an engineer or intern to the team? ",
-                choices = ["An Engineer", "An Intern", "No"]
+                choices: ["An Engineer", "An Intern", "No"]
             }
         ]).then(member => {
         if (member.role === "An Engineer") {
@@ -82,7 +84,7 @@ function engineerQuestions () {
             {
                 type: "input",
                 name: "github",
-                message: "Github profile URL: "
+                message: "Github username: "
             }
         ]).then (member => {
         const engineer = new Engineer(member.name, member.id, member.email, member.github);

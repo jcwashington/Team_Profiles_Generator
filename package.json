@@ -1,0 +1,30 @@
+{
+  "name": "homework10_team-profiles-generator",
+  "version": "1.0.0",
+  "description": "a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "./__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcwashington/Team_Profiles_Generator.git"
+  },
+  "keywords": [
+    "Node.js",
+    "HTML"
+  ],
+  "author": "Jasmine C Washington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcwashington/Team_Profiles_Generator/issues"
+  },
+  "homepage": "https://github.com/jcwashington/Team_Profiles_Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.4.7"
+  }
+}

@@ -45,7 +45,13 @@
   The first team member that must be added is the manager, after that you can begin to choose if you'd like to add additional Engineers or Interns to the team.
 
   ### [Visuals](#visuals)
-  
+  Here you can view a full walkthrough video of how to use the CLI tool: [Team Profile Generator v1.0](https://drive.google.com/file/d/1VAPfJ7YwEMkoGuez7LNCenbjsoK22L_a/view?usp=sharing)
+
+  Also worth adding is how easy it is to view the team member's Github profile and/or send an email directly to them
+  ![Direct to Github or Outbox](assets/generator-functionality.gif)
+
+  The UI is very simple and would also be very easy to customize to the manager's or company's preferences
+  ![Simple UI](assets/team-generator.png)
 
   ## [Licenses](#licenses)
   This project uses the ISC license.
